@@ -1,1 +1,0 @@
-# konstantinGN.github.io
