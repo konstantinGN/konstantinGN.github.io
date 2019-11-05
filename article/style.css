@@ -5,3 +5,6 @@ body#TCP-wrapper {
     position: relative;
     overflow: auto;
 }
+html{
+    background-color: white !important
+}
