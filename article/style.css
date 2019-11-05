@@ -1,0 +1,7 @@
+body#TCP-wrapper {
+    width: 500px;
+    height: calc(100% - 150px);
+    background-color: #000;
+    position: relative;
+    overflow: auto;
+}
