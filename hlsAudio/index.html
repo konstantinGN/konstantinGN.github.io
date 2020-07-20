@@ -1,0 +1,218 @@
+<html playerVersion="4.14.0" style="background-color: #000;">
+<!--
+The icons used in the reactions feature are coming from this https://github.com/twitter/twemoji library.
+-->
+<head>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        #TCP-wrapper {
+            width: 100%;
+            height: 100%;
+            background-color: #000;
+            position: fixed;
+            overflow: hidden;
+            top: 0;
+            left: 0
+        }
+
+        #TCARTICLE_wrapper {
+
+        }
+
+        #inputBlock {
+            position: fixed;
+            background-color: white;
+            z-index: 999999;
+            width: 100%;
+            padding: 10px 5px;
+        }
+
+        #url-src {
+            width: calc(100% - 50px);
+            height: 30px;
+        }
+
+    </style>
+
+</head>
+
+<script>
+  var p = {
+    "public_player": true,
+    "organization_path": "new",
+    "external_user_session": "",
+    "landing_pages_url": "https://touchcast.io",
+    "video_data": {
+      "file_id": "aca403c209484072bf64d24d881565f8",
+      "hash": "q6m6ukxlg0",
+      "hash_link": "q6m6ukxlg0",
+      "type": "performance",
+      "shareable_url": "https://portaldev.touchcast.io/s/q6m6ukxlg0",
+      "created": 1575460111,
+      "name": "New cc 2 10min andverylongtitlefortesnewchapterы",
+      "description": "The second edition of the Norman Foster Foundation Digital X Workshop took place on 18-22 February 2019, in association with e-flux Architecture.",
+      "url_thumb": "https://cdn-fabric-content-01.touchcast.io/su/1/a5d67d3906214439c992312ecca3d75f5f637e6e/file_id:aca403c209484072bf64d24d881565f8/sg-eyJsaW5rcyI6eyJmaWxlX2V4dGVybmFsX2xpbmtzIjoicTZtNnVreGxnMCJ9fQ==/touchcastdev-new-ihIczB06/files/c7ad1777-4e72-435f-b148-67f29a6dc6d8/meta/1575460548-thumb-thumb-1280x720.jpg?group=touchcastdev-new-ihIczB06",
+      "security_params": "",
+      "total_views": 901,
+      "source": {
+        "product": "studio",
+        "platform": "ios",
+        "version": "2.6.1161"
+      },
+      "exported": null,
+      "owner_data": {
+        "generated_displayname": "Konstantin Gnezdilov",
+        "displayname": "konstantin_gnezdilov",
+        "first_name": "Konstantin",
+        "last_name": "Gnezdilov",
+        "user_id": 3407481956561398,
+        "avatar": "https://cdn-fabric-content-01.touchcast.io/public/users/3407481956561398/avatar/default-3407481956561398-9fd7ebd3-13ce-44a3-a0db-b013c567959a.jpg?signature_version=1&signature=cc32601bcdf7de82ad521937e76c18840b61a5bb",
+        "title": ""
+      },
+      "vapps": [],
+      "base_url": "https://cdn-fabric-content-01.touchcast.io/su/1/056db3360c1557a78eb3fa2f7ce8d3a41acc11de/file_id:aca403c209484072bf64d24d881565f8/sg-eyJsaW5rcyI6eyJmaWxlX2V4dGVybmFsX2xpbmtzIjoicTZtNnVreGxnMCJ9fQ==/touchcastdev-new-ihIczB06/performances/c7ad1777-4e72-435f-b148-67f29a6dc6d8",
+      "duration": 647.03,
+      "height": 720,
+      "width": 1280,
+      "exported_from_livestream": false,
+      "actions_stream": "https://cdn-fabric-content-01.touchcast.io/su/1/056db3360c1557a78eb3fa2f7ce8d3a41acc11de/file_id:aca403c209484072bf64d24d881565f8/sg-eyJsaW5rcyI6eyJmaWxlX2V4dGVybmFsX2xpbmtzIjoicTZtNnVreGxnMCJ9fQ==/touchcastdev-new-ihIczB06/performances/c7ad1777-4e72-435f-b148-67f29a6dc6d8/actions-1.xml?group=touchcastdev-new-ihIczB06",
+      "tracks": [],
+      "summary_blocks": [],
+      "scene_changes": [],
+      "url_scrub": "https://cdn-fabric-content-01.touchcast.io/su/1/aa367630e98df19519df2c016f36dcf75bc317b8/file_id:aca403c209484072bf64d24d881565f8/sg-eyJsaW5rcyI6eyJmaWxlX2V4dGVybmFsX2xpbmtzIjoicTZtNnVreGxnMCJ9fQ==/touchcastdev-new-ihIczB06/files/c7ad1777-4e72-435f-b148-67f29a6dc6d8/meta/1575460611scrub.jpg?group=touchcastdev-new-ihIczB06",
+      "video_urls": {
+        "mp4": "https://cdn-fabric-content-01.touchcast.io/su/1/846258c75ce1870f3e9563772ac886004591be51/file_id:aca403c209484072bf64d24d881565f8/sg-eyJsaW5rcyI6eyJmaWxlX2V4dGVybmFsX2xpbmtzIjoicTZtNnVreGxnMCJ9fQ==/touchcastdev-new-ihIczB06/performances/c7ad1777-4e72-435f-b148-67f29a6dc6d8/video.mp4?group=touchcastdev-new-ihIczB06",
+        "ts": "https://wowzaec2demo.streamlock.net/vod-multitrack/_definst_/smil:ElephantsDream/elephantsdream2.smil/playlist.m3u",
+        "ts2": "https://cdn-fabric-content-01.touchcast.io/su/2/77-c7c563714ac9572efd1d2259cf9fe77eaca2cd66/file_id:aca403c209484072bf64d24d881565f8/sg-eyJsaW5rcyI6eyJmaWxlX2V4dGVybmFsX2xpbmtzIjoicTZtNnVreGxnMCJ9fQ==/touchcastdev-new-ihIczB06/performances/c7ad1777-4e72-435f-b148-67f29a6dc6d8/video-formats/ts/1/vod.m3u8?group=touchcastdev-new-ihIczB06"
+      },
+      "organization_id": 1,
+      "organization_name": "Touchcast Dev"
+    },
+    "vapps_data": {
+      "files": [],
+      "vapps": [],
+      "files_vapps_id": []
+    },
+    "user_data": {
+      "generated_displayname": "",
+      "user_id": "3407481956561398",
+      "avatar": "https://cdn-fabric-content-01.touchcast.io/public/users/3407481956561398/avatar/default-3407481956561398-9fd7ebd3-13ce-44a3-a0db-b013c567959a.jpg?signature_version=1&signature=cc32601bcdf7de82ad521937e76c18840b61a5bb",
+      "user_type": "internal"
+    },
+    "performance_data": "{\"performance\":{\"_attrs\":{\"id\":\"aca403c209484072bf64d24d881565f8\"},\"base_url\":\"https:\\/\\/cdn-fabric-content-01.touchcast.io\\/su\\/1\\/056db3360c1557a78eb3fa2f7ce8d3a41acc11de\\/file_id:aca403c209484072bf64d24d881565f8\\/sg-eyJsaW5rcyI6eyJmaWxlX2V4dGVybmFsX2xpbmtzIjoicTZtNnVreGxnMCJ9fQ==\\/touchcastdev-new-ihIczB06\\/performances\\/c7ad1777-4e72-435f-b148-67f29a6dc6d8\",\"actions_stream\":\"https:\\/\\/cdn-fabric-content-01.touchcast.io\\/su\\/1\\/056db3360c1557a78eb3fa2f7ce8d3a41acc11de\\/file_id:aca403c209484072bf64d24d881565f8\\/sg-eyJsaW5rcyI6eyJmaWxlX2V4dGVybmFsX2xpbmtzIjoicTZtNnVreGxnMCJ9fQ==\\/touchcastdev-new-ihIczB06\\/performances\\/c7ad1777-4e72-435f-b148-67f29a6dc6d8\\/actions-1.xml?group=touchcastdev-new-ihIczB06\",\"tracks\":[{\"id\":\"track2\",\"type\":\"trk-sub-srt\",\"language\":\"en\",\"url\":\"https:\\/\\/cdn-fabric-content-01.touchcast.io\\/su\\/1\\/7b1f7ffa18cd27c696ab95146e1b984353cf109b\\/file_id:aca403c209484072bf64d24d881565f8\\/sg-eyJsaW5rcyI6eyJmaWxlX2V4dGVybmFsX2xpbmtzIjoicTZtNnVreGxnMCJ9fQ==\\/touchcastdev-new-ihIczB06\\/performances\\/c7ad1777-4e72-435f-b148-67f29a6dc6d8\\/trk-sub-srt-en-5de7c99a-165V.srt?group=touchcastdev-new-ihIczB06\"},{\"id\":\"track3\",\"type\":\"trk-sub-srt\",\"language\":\"de\",\"url\":\"https:\\/\\/cdn-fabric-content-01.touchcast.io\\/su\\/1\\/0ef12d84e1376bbdba3f11b1e8747fe12fa52865\\/file_id:aca403c209484072bf64d24d881565f8\\/sg-eyJsaW5rcyI6eyJmaWxlX2V4dGVybmFsX2xpbmtzIjoicTZtNnVreGxnMCJ9fQ==\\/touchcastdev-new-ihIczB06\\/performances\\/c7ad1777-4e72-435f-b148-67f29a6dc6d8\\/trk-sub-srt-de-5de7c1ab-OWJ6.srt?group=touchcastdev-new-ihIczB06\"},{\"id\":\"track4\",\"type\":\"translation\",\"language\":\"de\",\"url\":\"https:\\/\\/cdn-fabric-content-01.touchcast.io\\/su\\/1\\/9a892a286574490fe81cff9c1fda16e9d6765e2f\\/file_id:aca403c209484072bf64d24d881565f8\\/sg-eyJsaW5rcyI6eyJmaWxlX2V4dGVybmFsX2xpbmtzIjoicTZtNnVreGxnMCJ9fQ==\\/touchcastdev-new-ihIczB06\\/performances\\/c7ad1777-4e72-435f-b148-67f29a6dc6d8\\/translation-5de7c1ab-NpHH.json?group=touchcastdev-new-ihIczB06\"},{\"id\":\"track5\",\"type\":\"trk-sub-srt\",\"language\":\"ru\",\"url\":\"https:\\/\\/cdn-fabric-content-01.touchcast.io\\/su\\/1\\/b21a0d915a67fcbce04356a796d29fefb921e39a\\/file_id:aca403c209484072bf64d24d881565f8\\/sg-eyJsaW5rcyI6eyJmaWxlX2V4dGVybmFsX2xpbmtzIjoicTZtNnVreGxnMCJ9fQ==\\/touchcastdev-new-ihIczB06\\/performances\\/c7ad1777-4e72-435f-b148-67f29a6dc6d8\\/trk-sub-srt-ru-5de7c368-mGi2.srt?group=touchcastdev-new-ihIczB06\"},{\"id\":\"track6\",\"type\":\"translation\",\"language\":\"ru\",\"url\":\"https:\\/\\/cdn-fabric-content-01.touchcast.io\\/su\\/1\\/2ca0d5117e84e5c9f165f56d21e8799db0b718c9\\/file_id:aca403c209484072bf64d24d881565f8\\/sg-eyJsaW5rcyI6eyJmaWxlX2V4dGVybmFsX2xpbmtzIjoicTZtNnVreGxnMCJ9fQ==\\/touchcastdev-new-ihIczB06\\/performances\\/c7ad1777-4e72-435f-b148-67f29a6dc6d8\\/translation-5de7c369-iK17.json?group=touchcastdev-new-ihIczB06\"},{\"id\":\"track8\",\"type\":\"translation\",\"language\":\"ja\",\"url\":\"https:\\/\\/cdn-fabric-content-01.touchcast.io\\/su\\/1\\/91fd497f5ef6d24971bab81d304f989a1b30bf34\\/file_id:aca403c209484072bf64d24d881565f8\\/sg-eyJsaW5rcyI6eyJmaWxlX2V4dGVybmFsX2xpbmtzIjoicTZtNnVreGxnMCJ9fQ==\\/touchcastdev-new-ihIczB06\\/performances\\/c7ad1777-4e72-435f-b148-67f29a6dc6d8\\/translation-5de8c52e-qCyJ.json?group=touchcastdev-new-ihIczB06\"},{\"id\":\"track1\",\"type\":\"transcription\",\"language\":\"en\",\"url\":\"https:\\/\\/cdn-fabric-content-01.touchcast.io\\/su\\/1\\/6bee155c95e7244361f4ac48b11e82d79c326053\\/file_id:aca403c209484072bf64d24d881565f8\\/sg-eyJsaW5rcyI6eyJmaWxlX2V4dGVybmFsX2xpbmtzIjoicTZtNnVreGxnMCJ9fQ==\\/touchcastdev-new-ihIczB06\\/performances\\/c7ad1777-4e72-435f-b148-67f29a6dc6d8\\/transcription-5de7d314-oFcu.json?group=touchcastdev-new-ihIczB06\"},{\"id\":\"track9\",\"type\":\"text_events\",\"url\":\"https:\\/\\/cdn-fabric-content-01.touchcast.io\\/su\\/1\\/6c8007b0b0611dc47ae3c56efd68b1997aa64c3f\\/file_id:aca403c209484072bf64d24d881565f8\\/sg-eyJsaW5rcyI6eyJmaWxlX2V4dGVybmFsX2xpbmtzIjoicTZtNnVreGxnMCJ9fQ==\\/touchcastdev-new-ihIczB06\\/performances\\/c7ad1777-4e72-435f-b148-67f29a6dc6d8\\/text_events-5de7d380-Yy1k.json?group=touchcastdev-new-ihIczB06\"},{\"id\":\"track10\",\"type\":\"scene_changes\",\"url\":\"https:\\/\\/cdn-fabric-content-01.touchcast.io\\/su\\/1\\/77a906a9bdd64244abf5ce5574455aaca411d6d7\\/file_id:aca403c209484072bf64d24d881565f8\\/sg-eyJsaW5rcyI6eyJmaWxlX2V4dGVybmFsX2xpbmtzIjoicTZtNnVreGxnMCJ9fQ==\\/touchcastdev-new-ihIczB06\\/performances\\/c7ad1777-4e72-435f-b148-67f29a6dc6d8\\/scene_changes-5de7d380-yJ8v.json?group=touchcastdev-new-ihIczB06\"},{\"id\":\"track11\",\"type\":\"debug-summary\",\"subtype\":\"scores\",\"url\":\"https:\\/\\/cdn-fabric-content-01.touchcast.io\\/su\\/1\\/3a6b4d55b9ebe003863c05a54ba2b5d0ddd5c758\\/file_id:aca403c209484072bf64d24d881565f8\\/sg-eyJsaW5rcyI6eyJmaWxlX2V4dGVybmFsX2xpbmtzIjoicTZtNnVreGxnMCJ9fQ==\\/touchcastdev-new-ihIczB06\\/performances\\/c7ad1777-4e72-435f-b148-67f29a6dc6d8\\/_debug\\/ai_files\\/debug.json?group=touchcastdev-new-ihIczB06\"},{\"id\":\"track12\",\"type\":\"debug-summary\",\"subtype\":\"blocks-inference\",\"url\":\"https:\\/\\/cdn-fabric-content-01.touchcast.io\\/su\\/1\\/382c3f3f9a000c34ef468805acc4150ff44c9794\\/file_id:aca403c209484072bf64d24d881565f8\\/sg-eyJsaW5rcyI6eyJmaWxlX2V4dGVybmFsX2xpbmtzIjoicTZtNnVreGxnMCJ9fQ==\\/touchcastdev-new-ihIczB06\\/performances\\/c7ad1777-4e72-435f-b148-67f29a6dc6d8\\/_debug\\/ai_files\\/summary_blocks_inference.json?group=touchcastdev-new-ihIczB06\"},{\"id\":\"track13\",\"type\":\"debug-summary\",\"subtype\":\"blocks-scores\",\"url\":\"https:\\/\\/cdn-fabric-content-01.touchcast.io\\/su\\/1\\/e5f4f39610df446e80e82e7798ffa9dd437ccdbd\\/file_id:aca403c209484072bf64d24d881565f8\\/sg-eyJsaW5rcyI6eyJmaWxlX2V4dGVybmFsX2xpbmtzIjoicTZtNnVreGxnMCJ9fQ==\\/touchcastdev-new-ihIczB06\\/performances\\/c7ad1777-4e72-435f-b148-67f29a6dc6d8\\/_debug\\/ai_files\\/summary_blocks_scores.json?group=touchcastdev-new-ihIczB06\"},{\"id\":\"track7\",\"type\":\"trk-sub-srt\",\"language\":\"ja\",\"url\":\"https:\\/\\/cdn-fabric-content-01.touchcast.io\\/su\\/1\\/13c2bf0cb8818ec9aa1b0e34ec2a0c83a279e653\\/file_id:aca403c209484072bf64d24d881565f8\\/sg-eyJsaW5rcyI6eyJmaWxlX2V4dGVybmFsX2xpbmtzIjoicTZtNnVreGxnMCJ9fQ==\\/touchcastdev-new-ihIczB06\\/performances\\/c7ad1777-4e72-435f-b148-67f29a6dc6d8\\/trk-sub-srt-ja-5de8c52d-PFkr.srt?group=touchcastdev-new-ihIczB06\"},{\"id\":\"track14\",\"type\":\"translation\",\"language\":\"en-US\",\"url\":\"https:\\/\\/cdn-fabric-content-01.touchcast.io\\/su\\/1\\/7d98ccc48b7a64f8c5eb9b8bbac9d7af0dd25100\\/file_id:aca403c209484072bf64d24d881565f8\\/sg-eyJsaW5rcyI6eyJmaWxlX2V4dGVybmFsX2xpbmtzIjoicTZtNnVreGxnMCJ9fQ==\\/touchcastdev-new-ihIczB06\\/performances\\/c7ad1777-4e72-435f-b148-67f29a6dc6d8\\/translation-5ed74bf1-1N5j.json?group=touchcastdev-new-ihIczB06\"}],\"summary_blocks\":[{\"start\":\"1.34\",\"stop\":\"34.42\"},{\"start\":\"35.46\",\"stop\":\"41.55\"},{\"start\":\"65.13\",\"stop\":\"68.08\"},{\"start\":\"69.22\",\"stop\":\"75.69\"},{\"start\":\"75.83\",\"stop\":\"88.55\"},{\"start\":\"115.04\",\"stop\":\"117.58\"},{\"start\":\"120.32\",\"stop\":\"122.87\"},{\"start\":\"144.33\",\"stop\":\"154.85\"},{\"start\":\"163.94\",\"stop\":\"171.46\"},{\"start\":\"193.39\",\"stop\":\"197.23\"},{\"start\":\"200.74\",\"stop\":\"223.14\"},{\"start\":\"382.61\",\"stop\":\"391.33\"},{\"start\":\"396.36\",\"stop\":\"398.05\"},{\"start\":\"507.78\",\"stop\":\"509.75\"},{\"start\":\"525.55\",\"stop\":\"529.51\"},{\"start\":\"532.46\",\"stop\":\"535.95\"},{\"start\":\"537.17\",\"stop\":\"543.09\"},{\"start\":\"543.1\",\"stop\":\"552.76\"},{\"start\":\"578.21\",\"stop\":\"584.62\"},{\"start\":\"587.81\",\"stop\":\"591.15\"}],\"scene_changes\":[{\"time\":0,\"thumbnail\":\"https:\\/\\/cdn-fabric-content-01.touchcast.io\\/su\\/1\\/28780b17c178950d917b4cdf1849955f0110e2af\\/file_id:aca403c209484072bf64d24d881565f8\\/sg-eyJsaW5rcyI6eyJmaWxlX2V4dGVybmFsX2xpbmtzIjoicTZtNnVreGxnMCJ9fQ==\\/touchcastdev-new-ihIczB06\\/performances\\/c7ad1777-4e72-435f-b148-67f29a6dc6d8\\/scene-0-thumb.jpg?group=touchcastdev-new-ihIczB06\",\"id\":\"cfeee1ee77714cccb7488cdf1fcaade6\",\"type\":\"scene\",\"title\":\"\",\"description\":\"\"},{\"time\":49.467,\"thumbnail\":\"https:\\/\\/cdn-fabric-content-01.touchcast.io\\/su\\/1\\/5e41c8752e461c166fa52d5736690a3320474aec\\/file_id:aca403c209484072bf64d24d881565f8\\/sg-eyJsaW5rcyI6eyJmaWxlX2V4dGVybmFsX2xpbmtzIjoicTZtNnVreGxnMCJ9fQ==\\/touchcastdev-new-ihIczB06\\/performances\\/c7ad1777-4e72-435f-b148-67f29a6dc6d8\\/scene-49-thumb.jpg?group=touchcastdev-new-ihIczB06\",\"id\":\"4aa6eba3889c4891a136290e29442002\",\"type\":\"scene\",\"title\":\"\",\"description\":\"\"},{\"time\":78.3,\"thumbnail\":\"https:\\/\\/cdn-fabric-content-01.touchcast.io\\/su\\/1\\/9065a27ded5d9a99a09d81f98def30d7ee68fec1\\/file_id:aca403c209484072bf64d24d881565f8\\/sg-eyJsaW5rcyI6eyJmaWxlX2V4dGVybmFsX2xpbmtzIjoicTZtNnVreGxnMCJ9fQ==\\/touchcastdev-new-ihIczB06\\/performances\\/c7ad1777-4e72-435f-b148-67f29a6dc6d8\\/scene-78-thumb.jpg?group=touchcastdev-new-ihIczB06\",\"id\":\"47308fa92f174b73b0caf9efc806ab1b\",\"type\":\"scene\",\"title\":\"\",\"description\":\"\"},{\"time\":86.7,\"thumbnail\":\"https:\\/\\/cdn-fabric-content-01.touchcast.io\\/su\\/1\\/3bed040fd7b025bda92a1dff19dc3ba42088f45a\\/file_id:aca403c209484072bf64d24d881565f8\\/sg-eyJsaW5rcyI6eyJmaWxlX2V4dGVybmFsX2xpbmtzIjoicTZtNnVreGxnMCJ9fQ==\\/touchcastdev-new-ihIczB06\\/performances\\/c7ad1777-4e72-435f-b148-67f29a6dc6d8\\/scene-86-thumb.jpg?group=touchcastdev-new-ihIczB06\",\"id\":\"dacead71833d43d2909f61971fdbbf28\",\"type\":\"scene\",\"title\":\"\",\"description\":\"\"},{\"time\":118.8,\"thumbnail\":\"https:\\/\\/cdn-fabric-content-01.touchcast.io\\/su\\/1\\/cc624de8f351023113e7f452c5d4dc6dc627c755\\/file_id:aca403c209484072bf64d24d881565f8\\/sg-eyJsaW5rcyI6eyJmaWxlX2V4dGVybmFsX2xpbmtzIjoicTZtNnVreGxnMCJ9fQ==\\/touchcastdev-new-ihIczB06\\/performances\\/c7ad1777-4e72-435f-b148-67f29a6dc6d8\\/scene-118-thumb.jpg?group=touchcastdev-new-ihIczB06\",\"id\":\"d90e486bcdb44a04aacf6029effc28bf\",\"type\":\"scene\",\"title\":\"\",\"description\":\"\"},{\"time\":187.9,\"thumbnail\":\"https:\\/\\/cdn-fabric-content-01.touchcast.io\\/su\\/1\\/1e530cae9173a1a690a7a3d43bec144822872981\\/file_id:aca403c209484072bf64d24d881565f8\\/sg-eyJsaW5rcyI6eyJmaWxlX2V4dGVybmFsX2xpbmtzIjoicTZtNnVreGxnMCJ9fQ==\\/touchcastdev-new-ihIczB06\\/performances\\/c7ad1777-4e72-435f-b148-67f29a6dc6d8\\/scene-187-thumb.jpg?group=touchcastdev-new-ihIczB06\",\"id\":\"c5dae31bd1c64d50b333feb718db8997\",\"type\":\"scene\",\"title\":\"\",\"description\":\"\"},{\"time\":431.433,\"thumbnail\":\"https:\\/\\/cdn-fabric-content-01.touchcast.io\\/su\\/1\\/7543f568f38a6a3ffcd5f9663bf7b54aec36fb76\\/file_id:aca403c209484072bf64d24d881565f8\\/sg-eyJsaW5rcyI6eyJmaWxlX2V4dGVybmFsX2xpbmtzIjoicTZtNnVreGxnMCJ9fQ==\\/touchcastdev-new-ihIczB06\\/performances\\/c7ad1777-4e72-435f-b148-67f29a6dc6d8\\/scene-431-thumb.jpg?group=touchcastdev-new-ihIczB06\",\"id\":\"af47322b4f93485e9b56c6c19617df33\",\"type\":\"scene\",\"title\":\"\",\"description\":\"\"},{\"time\":494.4,\"thumbnail\":\"https:\\/\\/cdn-fabric-content-01.touchcast.io\\/su\\/1\\/f8999c40d731803f2694676a5b05c2395b9e2cda\\/file_id:aca403c209484072bf64d24d881565f8\\/sg-eyJsaW5rcyI6eyJmaWxlX2V4dGVybmFsX2xpbmtzIjoicTZtNnVreGxnMCJ9fQ==\\/touchcastdev-new-ihIczB06\\/performances\\/c7ad1777-4e72-435f-b148-67f29a6dc6d8\\/scene-494-thumb.jpg?group=touchcastdev-new-ihIczB06\",\"id\":\"b5f4d09228b94477890486a7e813fedd\",\"type\":\"scene\",\"title\":\"\",\"description\":\"\"},{\"time\":535.167,\"thumbnail\":\"https:\\/\\/cdn-fabric-content-01.touchcast.io\\/su\\/1\\/f8d24c45ed72c7a014e2c4d8b708e49e44a47c1a\\/file_id:aca403c209484072bf64d24d881565f8\\/sg-eyJsaW5rcyI6eyJmaWxlX2V4dGVybmFsX2xpbmtzIjoicTZtNnVreGxnMCJ9fQ==\\/touchcastdev-new-ihIczB06\\/performances\\/c7ad1777-4e72-435f-b148-67f29a6dc6d8\\/scene-535-thumb.jpg?group=touchcastdev-new-ihIczB06\",\"id\":\"0213f537b645423c91c8f2067e3247e2\",\"type\":\"scene\",\"title\":\"\",\"description\":\"\"},{\"time\":549.2,\"thumbnail\":\"https:\\/\\/cdn-fabric-content-01.touchcast.io\\/su\\/1\\/5b8f24be514b3e0e3400c451ff88a388a8bd7e85\\/file_id:aca403c209484072bf64d24d881565f8\\/sg-eyJsaW5rcyI6eyJmaWxlX2V4dGVybmFsX2xpbmtzIjoicTZtNnVreGxnMCJ9fQ==\\/touchcastdev-new-ihIczB06\\/performances\\/c7ad1777-4e72-435f-b148-67f29a6dc6d8\\/scene-549-thumb.jpg?group=touchcastdev-new-ihIczB06\",\"id\":\"7a94182a237540d58a9d158b49d8130f\",\"type\":\"scene\",\"title\":\"\",\"description\":\"\"},{\"time\":571.933,\"thumbnail\":\"https:\\/\\/cdn-fabric-content-01.touchcast.io\\/su\\/1\\/dd10355484bb5932df32647205efdd1337facb47\\/file_id:aca403c209484072bf64d24d881565f8\\/sg-eyJsaW5rcyI6eyJmaWxlX2V4dGVybmFsX2xpbmtzIjoicTZtNnVreGxnMCJ9fQ==\\/touchcastdev-new-ihIczB06\\/performances\\/c7ad1777-4e72-435f-b148-67f29a6dc6d8\\/scene-571-thumb.jpg?group=touchcastdev-new-ihIczB06\",\"id\":\"72ed319e68fb411bba7ff101c1299999\",\"type\":\"scene\",\"title\":\"\",\"description\":\"\",\"subtype\":\"blocks-scores\"}],\"url_scrub\":\"https:\\/\\/cdn-fabric-content-01.touchcast.io\\/su\\/1\\/aa367630e98df19519df2c016f36dcf75bc317b8\\/file_id:aca403c209484072bf64d24d881565f8\\/sg-eyJsaW5rcyI6eyJmaWxlX2V4dGVybmFsX2xpbmtzIjoicTZtNnVreGxnMCJ9fQ==\\/touchcastdev-new-ihIczB06\\/files\\/c7ad1777-4e72-435f-b148-67f29a6dc6d8\\/meta\\/1575460611scrub.jpg?group=touchcastdev-new-ihIczB06\",\"performance_url\":\"\",\"video\":{\"_attrs\":{\"src\":\"file\"},\"value\":\"https:\\/\\/cdn-fabric-content-01.touchcast.io\\/su\\/1\\/846258c75ce1870f3e9563772ac886004591be51\\/file_id:aca403c209484072bf64d24d881565f8\\/sg-eyJsaW5rcyI6eyJmaWxlX2V4dGVybmFsX2xpbmtzIjoicTZtNnVreGxnMCJ9fQ==\\/touchcastdev-new-ihIczB06\\/performances\\/c7ad1777-4e72-435f-b148-67f29a6dc6d8\\/video.mp4?group=touchcastdev-new-ihIczB06\",\"ts\":\"https:\\/\\/cdn-fabric-content-01.touchcast.io\\/su\\/2\\/77-c7c563714ac9572efd1d2259cf9fe77eaca2cd66\\/file_id:aca403c209484072bf64d24d881565f8\\/sg-eyJsaW5rcyI6eyJmaWxlX2V4dGVybmFsX2xpbmtzIjoicTZtNnVreGxnMCJ9fQ==\\/touchcastdev-new-ihIczB06\\/performances\\/c7ad1777-4e72-435f-b148-67f29a6dc6d8\\/video-formats\\/ts\\/1\\/vod.m3u8?group=touchcastdev-new-ihIczB06\"},\"vapps\":[],\"meta\":{\"timestamp\":1575460111,\"name\":\"New cc 2 10min andverylongtitlefortesnewchapter\\u044b\",\"description\":\"The second edition of the Norman Foster Foundation Digital X Workshop took place on 18-22 February 2019, in association with e-flux Architecture.\",\"type\":\"normal\",\"aspect\":\"16:9\",\"tags\":[],\"number_of_views\":901,\"duration\":647.03,\"times_bookmarked\":0,\"times_recasted\":0,\"comments_amount\":0,\"user\":{\"_attrs\":{\"user_id\":3407481956561398,\"name\":\"Konstantin Gnezdilov\",\"generated_displayname\":\"Konstantin Gnezdilov\",\"displayname\":\"konstantin_gnezdilov\",\"first_name\":\"Konstantin\",\"last_name\":\"Gnezdilov\",\"avatar\":\"https:\\/\\/cdn-fabric-content-01.touchcast.io\\/public\\/users\\/3407481956561398\\/avatar\\/default-3407481956561398-9fd7ebd3-13ce-44a3-a0db-b013c567959a.jpg?signature_version=1&signature=cc32601bcdf7de82ad521937e76c18840b61a5bb\"},\"homepage\":null,\"image_url\":null,\"url\":null,\"channel_name\":\"Konstantin Gnezdilov\",\"description\":null,\"twitter\":null,\"subscribed\":0,\"performances_uploaded\":0,\"performances_recasted\":0,\"subscribers\":0,\"total_subscribed\":0},\"bookmarked\":false,\"flagged_as_inappropriate\":false,\"recasted\":false}}}",
+    "group_path": "touchcastdev-new-ihIczB06",
+    "access_token": "f2c1a5041968b7f7d5604990f676b06f6dd8bc2201f7513f98cdf3666c3c29e0",
+    "base_path_scripts": {
+      "touchcast_jssdk": "tcsdk-prod.s3.amazonaws.com/dev/fabricplayersdk",
+      "player_live_integrated": "tcsdk-prod.s3.amazonaws.com/player/templates/player_live_integrated/dev/fabricplayer",
+      "player_url": "static.touchcast.io/develop/player",
+    },
+    "interactiveTip": true,
+    "fabric_init_config": {
+      "group": "touchcastdev-new-ihIczB06"
+    },
+    "file_view_add_path": "/g/touchcastdev-new-ihIczB06/files/view/add",
+    "playerConfig": {
+      "intercom": false,
+      "analytics": false,
+      "intercomId": "zahdcf9c",
+      "chaptersControl": true,
+      "commentsControl": false,
+      "controlsColor": "rgba(33,33,33,.86)",
+      "debug": false,
+      "defaultSearchLanguage": "",
+      "defaultStreamVariant": 2,
+      "enableArticle": false,
+      "enableChatSound": false,
+      "enableThumbsSound": false,
+      "endScreen": true,
+      "fullscreenControl": true,
+      "infoControl": false,
+      "interactiveTip": true,
+      "interactiveTipShowTime": 5000,
+      "logoInControls": true,
+      "pipPosition": "bottom-right",
+      "playerArticleComments": false,
+      "playerArticleText": false,
+      "playerBackgroundColor": "#000",
+      "progressUpdateColor": [
+        "#635dfe",
+        "#d638e8",
+        "#e9006c"
+      ],
+      "shareControl": true,
+      "startTime": 0,
+      "streamWaitingVideo": "//tc.touchcast.com/files/YSAgICAgICAgICAgICAgIE1uejVPOW80SjlINUdsT3kxR0cvbi9YUkhjNkZyaGJjd09IMk03SDU4N0NCU0p4cEZwOC9mK281NHhvUlhWSWQ=",
+      "subtitlesBackgroundColor": "rgba(49,49,49,.93)",
+      "subtitlesTextColor": "#fff",
+      "summary": 0,
+      "summaryControl": true,
+      "summaryNoSkip": false,
+      "summaryTrailerDuration": 0,
+      "tclanguage": [],
+      "timingControl": true,
+      "volumeControl": true,
+      "allowAjax": false,
+      "autoplay": false,
+      "defaultSubtitle": "",
+      "domain": "//portal.touchcast.io",
+      "lang": "en",
+      "progressbarControl": true,
+      "skincolor": "rgba(33,33,33,.86)",
+      "summarySetting": 0,
+      "group": null
+    },
+    "hiw": "MTkyLjE2Mi4xNDAuMTQ3"
+  }
+</script>
+<body>
+
+
+<!--new wrapper for player dont change ID!-->
+<div id="inputBlock">
+    <input id="url-src"
+           placeholder="enter m3u8 url"
+           value="https://wowzaec2demo.streamlock.net/vod-multitrack/_definst_/smil:ElephantsDream/elephantsdream2.smil/playlist.m3u"
+    >
+    <button id="url-button"> set</button>
+</div>
+
+<div id="TCP-wrapper">
+    <!-- font preload -->
+    <div class="fontPreload" style="opacity: 0; position: absolute; top: -5000px;" aria-hidden="true">
+        <span style="font-family: 'AvertaStd', Arial, sans-serif; font-weight: normal">1</span>
+        <span style="font-family: 'AvertaStd', Arial, sans-serif; font-weight: bold">1</span>
+        <span style="font-family: 'AvertaStd', Arial, sans-serif; font-weight: 600">1</span>
+        <span style="font-family: 'AvertaStd', Arial, sans-serif; font-weight: 300">1</span>
+    </div>
+    <!-- end font preload -->
+    <!--not supported message-->
+    <div id="TCP-app"></div>
+    <!--end not supported message-->
+</div>
+
+
+<script src="./app.js?v=1595244977779"></script>
+<script>
+  (function(){
+    document.getElementById('url-button').addEventListener('click', function(){
+      var url=document.getElementById('url-src').value;
+      p.video_data.video_urls.ts = url;
+      TCPlayer.setData(p);
+      document.getElementById('url-src').value='';
+    })
+  })()
+</script>
+
+
+</body>
+
+</html>

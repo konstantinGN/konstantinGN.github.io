@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="35px" viewBox="0 0 36 35" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>rocket</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="rocket" transform="translate(0.000000, -1.000000)">
+            <rect id="Rectangle" fill-opacity="0" fill="#D8D8D8" x="1" y="0" width="36" height="36"></rect>
+            <path d="M1,18 L9,11 L25,12 L26,28 L19,36 C19,36 19.001,30.001 13,24 C6.999,17.999 1,18 1,18 Z" id="Path" fill="#A0041E" fill-rule="nonzero"></path>
+            <path d="M0.972980492,36 C0.972980492,36 0.937,28.021 3.958,25 C6.979,21.979 15,22.187 15,22.187 C15,22.187 14.999,30 11.999,33 C8.999,36 0.972980492,36 0.972980492,36 Z" id="Path" fill="#FFAC33" fill-rule="nonzero"></path>
+            <circle id="Oval" fill="#FFCC4D" fill-rule="nonzero" cx="8.999" cy="28" r="4"></circle>
+            <path d="M35.999,1 C35.999,1 25.999,1 13.999,11 C7.999,16 7.999,25 9.999,27 C11.999,29 20.999,29 25.999,23 C35.999,11 35.999,1 35.999,1 Z" id="Path" fill="#55ACEE" fill-rule="nonzero"></path>
+            <path d="M26.999,6 C25.376,6 23.986,6.971 23.358,8.36 C23.86,8.133 24.413,8 24.999,8 C27.208,8 28.999,9.791 28.999,12 C28.999,12.586 28.866,13.139 28.64,13.64 C30.029,13.013 30.999,11.623 30.999,10 C30.999,7.791 29.208,6 26.999,6 L26.999,6 Z" id="Path" fill="#000000" fill-rule="nonzero"></path>
+            <path d="M8,29 C8,29 8,25 9,24 C10,23 22.001,13.001 23,14 C23.999,14.999 13.999,27 12.999,28 C11.999,29 8,29 8,29 Z" id="Path" fill="#A0041E" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>

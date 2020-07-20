@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="58" height="65" viewBox="0 0 58 65">
+    <defs>
+        <linearGradient id="a" x1="-7.197%" x2="100.235%" y1="48.99%" y2="64.034%">
+            <stop offset="0%" stop-color="#D241FA"/>
+            <stop offset="17.32%" stop-color="#D831DB"/>
+            <stop offset="59.34%" stop-color="#E70E95"/>
+            <stop offset="78.94%" stop-color="#ED0079"/>
+            <stop offset="85.58%" stop-color="#EA0070"/>
+            <stop offset="100%" stop-color="#E50061"/>
+        </linearGradient>
+        <radialGradient id="b" cx="84.029%" cy="24.78%" r="168.322%" fx="84.029%" fy="24.78%" gradientTransform="matrix(1 0 0 .66432 0 .083)">
+            <stop offset="0%" stop-color="#B5FFF5"/>
+            <stop offset="16.92%" stop-color="#B0FBF5"/>
+            <stop offset="38.37%" stop-color="#A0EEF5"/>
+            <stop offset="62.25%" stop-color="#86D9F5"/>
+            <stop offset="87.72%" stop-color="#62BBF4"/>
+            <stop offset="100%" stop-color="#4EABF4"/>
+        </radialGradient>
+        <radialGradient id="c" cx="34.451%" cy="121.924%" r="126.654%" fx="34.451%" fy="121.924%" gradientTransform="matrix(.88498 0 0 1 .04 0)">
+            <stop offset="0%" stop-color="#6ADFFB"/>
+            <stop offset="5.007%" stop-color="#6AD6FB"/>
+            <stop offset="51.19%" stop-color="#6685FD"/>
+            <stop offset="83.94%" stop-color="#6353FF"/>
+            <stop offset="100%" stop-color="#623FFF"/>
+        </radialGradient>
+    </defs>
+    <g fill="none" fill-rule="nonzero">
+        <path fill="#000" d="M58 38L11.5 65 0 58V7l11.5-7L58 27z" opacity=".5"/>
+        <path fill="url(#a)" d="M53.897 28.177L18.96 48.083l-.026-22.762-7.441-4.234v39.811l42.403-24.164z"/>
+        <path fill="url(#b)" d="M11.506 60.923v-39.81l20 11.374 7.43-4.246L4 8.336v48.328z"/>
+        <path fill="url(#c)" d="M11.48 4L4 8.272l.956.574 33.966 19.357-7.428 4.246-.013-.013-12.584 7.192.013 8.518 34.974-19.982z"/>
+    </g>
+</svg>
