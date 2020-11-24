@@ -31,30 +31,27 @@
             <input id="streamEmail" type="email" class="form-control" placeholder="email" aria-label="Small"
                    aria-describedby="inputGroup-sizing-sm">
         </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <label class="input-group-text" for="inputGroupSelect01">iframe count</label>
+            </div>
+            <select class="custom-select" id="inputGroupSelect01">
+                <option value="1">1</option>
+                <option value="3">3</option>
+                <option selected value="6">6</option>
+                <option value="9">9</option>
+                <option value="12">12</option>
+                <option value="15">15</option>
+                <option value="18">18</option>
+            </select>
+        </div>
         <button id='setButton' type="button" class="btn btn-primary">set</button>
     </div>
     <p></p>
-    <div class="row">
+    <div class="row" id="body">
 
-        <div class="col-4">
-        <iframe id=" tcl-video1" src="" frameborder="0" allowfullscreen="" height = '150px' width ='100%'></iframe>
+
     </div>
-    <div class="col-4">
-        <iframe id="tcl-video2" src="" frameborder="0" allowfullscreen="" height='150px' width='100%'></iframe>
-    </div>
-    <div class="col-4">
-        <iframe id="tcl-video3" src="" frameborder="0" allowfullscreen="" height='150px' width='100%'></iframe>
-    </div>
-    <div class="col-4">
-        <iframe id="tcl-video4" src="" frameborder="0" allowfullscreen="" height='150px' width='100%'></iframe>
-    </div>
-    <div class="col-4">
-        <iframe id="tcl-video5" src="" frameborder="0" allowfullscreen="" height='150px' width='100%'></iframe>
-    </div>
-    <div class="col-4">
-        <iframe id="tcl-video6" src="" frameborder="0" allowfullscreen="" height='150px' width='100%'></iframe>
-    </div>
-</div>
 
 </div>
 
@@ -65,11 +62,14 @@
   $('#setButton').click(function () {
     var url = $('#streamUrl')[0].value
     var email = $('#streamEmail')[0].value
-    var src = url + '?email=' + email
-    console.log('filter -----------------', $('iframe'))
-    $('iframe').each(function (i, el) {
-      console.log('filter -----------------', el.src = src)
-    })
+    var count = $('#inputGroupSelect01')[0].value
+    var src = url + '?email=' + email;
+    var html=''
+    for (var i=0; i<count; i++){
+      html = html + `<div class="col-4"><iframe id="tc-video${i}" src=${src} frameborder="0" allowfullscreen="" height = '150px' width ='100%'></iframe></div>`
+    }
+   $('#body').html='';
+   $('#body').html(html)
   })
 </script>
 </html>
