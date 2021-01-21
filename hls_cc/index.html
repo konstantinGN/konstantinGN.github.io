@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CC HLS.js</title>
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+</head>
+<style>
+    body{
+        background-color: #090212;
+
+    }
+   #video {
+
+        width: 720px;
+        margin-top: 150px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+       background-color: #0c181b;
+    }
+</style>
+<body>
+
+
+<video id="video" controls autoplay></video>
+<script>
+  var video = document.getElementById('video');
+  var videoSrc = 'https://tcforwork-dev.s3.amazonaws.com/samples/hls608/clip1/clip.m3u8' ;
+
+  if (video.canPlayType('application/vnd.apple.mpegurl')) {
+    video.src = videoSrc;
+  } else if (Hls.isSupported()) {
+    var hls = new Hls();
+    hls.loadSource(videoSrc);
+    hls.attachMedia(video);
+  }
+</script>
+</body>
+</html>
