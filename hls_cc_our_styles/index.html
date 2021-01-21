@@ -33,7 +33,34 @@
         display: block;
         background-color: #0c181b;
     }
+    video#video::cue {
+        font-size: 15px;
+        font-family: AvertaStd;
+        background-color: transparent !important;
+        opacity: 1 !important;
+    }
 
+    video#video::-webkit-media-text-track-display {
+        overflow: visible !important;
+        box-sizing: border-box;
+        left: 50% !important;
+        top: 50% !important;
+        transform: translate(-50%, -50%) !important;
+        width: auto !important;
+        background-color: rgba(49, 49, 49, 0.93) !important;
+        padding: 8px 15px !important;
+        border-radius: 2px !important;
+    }
+
+    video#video::-webkit-media-text-track-container {
+        overflow: visible !important;
+        transform: translateY(-55px) !important;
+        position: relative;
+    }
+
+    video#video::-webkit-media-text-track-display-backdrop {
+
+    }
 </style>
 <body>
 <div class="container">
