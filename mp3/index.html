@@ -1,0 +1,313 @@
+<html playerVersion="4.25.0" style="background-color: #000;">
+<!--
+The icons used in the reactions feature are coming from this https://github.com/twitter/twemoji library.
+-->
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        html.articleIsActive,
+        html.articleIsActive body,
+        html.articleIsActive body .video-body {
+            background-color: white !important;
+        }
+
+        html.articleIsActive,
+        html.articleIsActive body {
+            height: 100% !important;
+            transform: none !important;
+        }
+
+
+        #TCP-wrapper {
+            width: 100%;
+            height: 100%;
+            background-color: #000;
+            position: fixed;
+            overflow: hidden;
+            visibility: hidden;
+            top: 0;
+            left: 0
+        }
+        #TCARTICLE_wrapper{
+            visibility: hidden;
+            display: none;
+        }
+
+        #not-supported-wrapper {
+            background: none repeat scroll 0 0 #000;
+            margin: 0;
+            max-height: 100%;
+            overflow: hidden;
+            padding: 0;
+            height: 100%;
+            display: none;
+            width: 100%;
+        }
+
+        #not-supported {
+            background-size: cover;
+            bottom: 0;
+            font-weight: bold;
+            left: 0;
+            right: 0;
+            top: 0;
+            z-index: 2147483647;
+            display: none;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+
+        #not-supported .state-border-box {
+            font-style: normal;
+            font-weight: 300;
+            max-width: 530px;
+            position: relative;
+            display: inline-block;
+            text-align: left;
+            color: #FFF;
+            padding: 40px 44px 32px 44px !important;
+            box-sizing: border-box;
+            width: 100%;
+            background: rgba(33, 33, 33, 0.86);
+        }
+
+        #not-supported .state-border-box:before {
+            content: '';
+            height: 100%;
+            width: 1px;
+        }
+
+        #not-supported .state-border-box h2 {
+            margin: 0;
+            font-size: 56px;
+            line-height: 1;
+        }
+
+
+        #not-supported .state-border-box h3 {
+            margin: 10px 0 0;
+            font-size: 36px;
+            font-weight: 300;
+            line-height: 1;
+        }
+
+        #not-supported .state-border-box ul {
+            list-style: circle;
+            color: #f15d50;
+            margin-bottom: 0;
+        }
+
+        @media (max-height: 580px) and (max-width: 320px),
+        (max-height: 320px) and (max-width: 580px) {
+            #not-supported .state-border-box {
+                padding: 22px 22px 32px 22px;
+            }
+
+            #not-supported .state-border-box h2 {
+                font-size: 48px;
+            }
+
+            #not-supported .state-border-box h3 {
+                font-size: 16px;
+            }
+
+            #not-supported .state-border-box ul {
+                font-size: 10px;
+                margin: 8px 0 0 16px;
+            }
+        }
+    </style>
+<script>
+    var paramsFromServer={
+      "public_player": true,
+      "organization_path": "new",
+      "external_user_session": "",
+      "landing_pages_url": "https://portaldev.touchcast.io",
+      "video_data": {
+        "file_id": "aca403c209484072bf64d24d881565f8",
+        "hash": "q6m6ukxlg0",
+        "hash_link": "q6m6ukxlg0",
+        "type": "performance",
+        "shareable_url": "https://portaldev.touchcast.io/s/q6m6ukxlg0",
+        "created": 1575460111,
+        "name": "New cc 2 10min",
+        "description": "The second edition of the Norman Foster Foundation Digital X Workshop took place on 18-22 February 2019, in association with e-flux Architecture.",
+        "url_thumb": "",
+        "total_views": 1947,
+        "source": {
+          "product": "studio",
+          "platform": "ios",
+          "version": "2.6.1161"
+        },
+        "exported": null,
+        "owner_data": {
+          "generated_displayname": "Konstantin Gnezdilov",
+          "displayname": "konstantin_gnezdilov",
+          "first_name": "Konstantin",
+          "last_name": "Gnezdilov",
+          "user_id": "3407481956561398",
+          "avatar": "https://cdn-fabric-content-01.touchcast.io/public/users/3407481956561398/avatar/default-3407481956561398-9fd7ebd3-13ce-44a3-a0db-b013c567959a.jpg?signature_version=1&signature=cc32601bcdf7de82ad521937e76c18840b61a5bb",
+          "title": ""
+        },
+        "base_url": "https://cdn-fabric-content-01.touchcast.io/su/1/056db3360c1557a78eb3fa2f7ce8d3a41acc11de/file_id:aca403c209484072bf64d24d881565f8/sg-eyJsaW5rcyI6eyJmaWxlX2V4dGVybmFsX2xpbmtzIjoicTZtNnVreGxnMCJ9fQ==/touchcastdev-new-ihIczB06/performances/c7ad1777-4e72-435f-b148-67f29a6dc6d8",
+        "duration": 514,
+        "height": 720,
+        "width": 1280,
+        "exported_from_livestream": false,
+        "actions_stream": "https://cdn-fabric-content-01.touchcast.io/su/1/056db3360c1557a78eb3fa2f7ce8d3a41acc11de/file_id:aca403c209484072bf64d24d881565f8/sg-eyJsaW5rcyI6eyJmaWxlX2V4dGVybmFsX2xpbmtzIjoicTZtNnVreGxnMCJ9fQ==/touchcastdev-new-ihIczB06/performances/c7ad1777-4e72-435f-b148-67f29a6dc6d8/actions-1.xml?group=touchcastdev-new-ihIczB06",
+        "tracks": [],
+        "summary_blocks": [],
+        "summaries": [],
+        "scene_changes": [],
+        "url_scrub": "",
+        "video_urls": {
+          "mp4": "",
+          "ts": "aHR0cHM6Ly9wbC5zdHJlYW1pbmd2aWRlb3Byb3ZpZGVyLmNvbS9tcDMtcGxheWxpc3QvcGxheWxpc3QubTN1OA=="
+        },
+        "organization_id": 1,
+        "organization_name": "Touchcast Dev",
+        "group_logo": "https://cdn-fabric-content-01.touchcast.io/su/1/85824a02fbc64ace5be638163ada86a540d1dd07/group_id:touchcastdev-new-ihIczB06/touchcastdev-new-ihIczB06/assets/5807dd602664a565fe53cf2d203674b388d7b2d1/s-l1600new.jpg?",
+        "kollective_token": null,
+        "logo_data": {
+          "org_logo": "https://cdn-fabric-content-01.touchcast.io/su/1/033bc217b38f34f630c9d1acea08f97c6131dd22/appconfig:_special_logo_1/orgs/touchcast.io/assets/5807dd602664a565fe53cf2d203674b388d7b2d1/org_logo_1620421759.png?",
+          "group_logo": "https://cdn-fabric-content-01.touchcast.io/su/1/85824a02fbc64ace5be638163ada86a540d1dd07/group_id:touchcastdev-new-ihIczB06/touchcastdev-new-ihIczB06/assets/5807dd602664a565fe53cf2d203674b388d7b2d1/s-l1600new.jpg?",
+          "group_logo_regular_white": "",
+          "group_logo_regular_black": "",
+          "org_logo_regular_white": "https://cdn-fabric-content-01.touchcast.io/su/1/b222b47c2f388f011f876b17b2aedc9f9c582776/appconfig:_special_logo_1/orgs/touchcast.io/assets/13c4eb7a4c6e751741824d62479e7ed901865073/org_logo_1619758128.png?",
+          "org_logo_regular_black": "https://cdn-fabric-content-01.touchcast.io/su/1/c7a48af923dd3c1517e9223fa3dcecb5b717a51b/appconfig:_special_logo_1/orgs/touchcast.io/assets/7f50700d88a3ef79af202cb9cb217fab64e41d4b/org_logo_1623396572.png?"
+        }
+      },
+      "vapps_data": {
+        "files": [],
+        "vapps": [],
+        "files_vapps_id": []
+      },
+      "user_data": {
+        "generated_displayname": "konstantin_gnezdilov",
+        "user_id": "3407481956561398",
+        "avatar": "https://cdn-fabric-content-01.touchcast.io/public/users/3407481956561398/avatar/default-3407481956561398-9fd7ebd3-13ce-44a3-a0db-b013c567959a.jpg?signature_version=1&signature=cc32601bcdf7de82ad521937e76c18840b61a5bb",
+        "email": "konstantin.gnezdilov@touchcast.com",
+        "user_type": "internal"
+      },
+      "group_path": "touchcastdev-new-ihIczB06",
+      "access_token": "0bc5631cb3565e70cb3cc0c73884b509e0c06d9d20c7bd0d1751c31870e8adc0",
+      "fabric_init_config": {
+        "group": "touchcastdev-new-ihIczB06"
+      },
+      "file_view_add_path": "/g/touchcastdev-new-ihIczB06/files/view/add",
+      "playerConfig": {
+        "intercom": false,
+        "intercomId": "zahdcf9c",
+        "chaptersControl": true,
+        "commentsControl": false,
+        "controlsColor": "rgba(33,33,33,.86)",
+        "debug": false,
+        "defaultSearchLanguage": "",
+        "defaultStreamVariant": 2,
+        "enableArticle": false,
+        "enableChatSound": false,
+        "enableThumbsSound": false,
+        "endScreen": true,
+        "fullscreenControl": true,
+        "infoControl": false,
+        "interactiveTip": true,
+        "interactiveTipShowTime": 5000,
+        "logoInControls": true,
+        "pipPosition": "bottom-right",
+        "playerArticleComments": false,
+        "playerBackgroundColor": "#000",
+        "progressUpdateColor": [
+          "#635dfe",
+          "#d638e8",
+          "#e9006c"
+        ],
+        "shareControl": false,
+        "startTime": 0,
+        "streamWaitingVideo": "//tc.touchcast.com/files/YSAgICAgICAgICAgICAgIE1uejVPOW80SjlINUdsT3kxR0cvbi9YUkhjNkZyaGJjd09IMk03SDU4N0NCU0p4cEZwOC9mK281NHhvUlhWSWQ=",
+        "subtitlesBackgroundColor": "rgba(49,49,49,.93)",
+        "subtitlesTextColor": "#fff",
+        "summary": 0,
+        "summaryControl": true,
+        "summaryNoSkip": false,
+        "summaryTrailerDuration": 0,
+        "tclanguage": [],
+        "timingControl": true,
+        "volumeControl": true,
+        "allowAjax": false,
+        "autoplay": false,
+        "defaultSubtitle": "",
+        "domain": "//portal.touchcast.io",
+        "lang": "en",
+        "progressbarControl": true,
+        "skincolor": "rgba(33,33,33,.86)",
+        "summarySetting": 0,
+        "group": null,
+      },
+      "hiw": "MTM0LjI0OS4xMzIuMjI3",
+    "user_has_edit_permissions": true,
+    "article_editor_url": "https://portaldev.touchcast.io/g/new/article-editor/aca403c209484072bf64d24d881565f8"
+    }
+</script>
+</head>
+<body>
+
+
+<!--new wrapper for player dont change ID!-->
+
+<div id="TCP-wrapper">
+    <!-- font preload -->
+    <div class="fontPreload" style="opacity: 0; position: absolute; top: -5000px;" aria-hidden="true">
+        <span style="font-family: 'AvertaStd', Arial, sans-serif; font-weight: normal">1</span>
+        <span style="font-family: 'AvertaStd', Arial, sans-serif; font-weight: bold">1</span>
+        <span style="font-family: 'AvertaStd', Arial, sans-serif; font-weight: 600">1</span>
+        <span style="font-family: 'AvertaStd', Arial, sans-serif; font-weight: 800">1</span>
+        <span style="font-family: 'AvertaStd', Arial, sans-serif; font-weight: 300">1</span>
+        <span class="icon-">1</span>
+    </div>
+    <!-- end font preload -->
+    <!--not supported message-->
+    <div id="not-supported-wrapper">
+        <div id="not-supported">
+            <div class="state-wrapper state-border-box">
+                <div class="state state-not-supported">
+                    <h2 id="noSupportedHeader">Oops!</h2>
+
+                    <h3 id="noSupportedText">
+                        We're sorry but your web browser is no longer supported. Please switch to one of the supported browsers such as:
+                    </h3>
+                    <ul>
+                        <li>Safari (MacOS 10.10 or later and iOS 10 or later)</li>
+                        <li>Chrome (MacOS and Win 8 and 10)</li>
+                        <li>Firefox (MacOS and Win 8 and 10)</li>
+                        <li>IE 11 (Win 8 and 10)</li>
+                        <li>Edge (Win 10)</li>
+                        <li>Android 5 or later</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end not supported message-->
+</div>
+
+<!--new wrapper article dont change ID!-->
+<div id="TCARTICLE_wrapper"></div>
+
+<script src="./preload.js?v=1624001853610"></script>
+
+<script src="./app.js?v=1624001853610"></script>
+
+
+</body>
+
+</html>
